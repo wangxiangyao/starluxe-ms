@@ -12,9 +12,11 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
+      name: 'root',
       redirect: '/member'
     },
     {
+      name: 'member',
       path: '/member',
       component: member
     }

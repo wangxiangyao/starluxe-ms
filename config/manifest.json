@@ -1,7 +1,5 @@
 {
   "app.js": "/public/js/app.js",
-  "js/chunk/0.js": "/public/js/chunk/0.js",
-  "img/loading.gif": "/public/img/loading.gif",
   "js/vendor.js": "/public/js/vendor.js",
   "vendor.js": "/public/js/vendor.js",
   "deps": {

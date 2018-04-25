@@ -2,6 +2,13 @@
 
 ## 管理提交
 
+### 工具
+使用commitizen管理项目提交
+提交时候，请使用`npm run commit`
+
+或者使用`git commit`打开vim，自定义编写提交，应符合commit message书写规范
+
+### 规则
 > 禁用 `git commit -m 'fix bug #xxx'`
 
 - commit 格式

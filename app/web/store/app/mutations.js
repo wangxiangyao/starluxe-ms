@@ -1,16 +1,13 @@
 'use strict';
 
-import {
-  SET_ARTICLE_LIST,
-  SET_ARTICLE_DETAIL
-} from './mutation-type'
+import * as TYPE from './mutation-type';
 
 const mutations = {
-  [SET_ARTICLE_LIST] (state, items){
-    state.articleList = items;
+  [TYPE.STORE_TOKEN](state, token) {
+    state.token = token;
   },
-  [SET_ARTICLE_DETAIL](state, data) {
-    state.article = data;
+  [TYPE.STORE_USER](state, user) {
+    state.user = user;
   }
 };
-export default mutations
+export default mutations;
