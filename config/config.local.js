@@ -16,14 +16,6 @@ module.exports = app => {
     dir: path.join(app.baseDir, 'logs')
   };
 
-  exports.vuessr = {
-    injectCss: false
-  };
-
-  exports.webpack = {
-    browser: 'http://localhost:7001'
-  };
-
   const localIP = ip.address();
   const domainWhiteList = [];
   [7001, 9000, 9001].forEach(port => {
