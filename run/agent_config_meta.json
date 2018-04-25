@@ -1,0 +1,348 @@
+{
+  "siteFile": {
+    "/favicon.ico": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js"
+  },
+  "view": {
+    "cache": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view\\config\\config.local.js",
+    "root": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultExtension": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view\\config\\config.default.js",
+    "defaultViewEngine": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view\\config\\config.default.js",
+    "mapping": {
+      ".js": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js"
+    }
+  },
+  "vuessr": {
+    "layout": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+    "renderOptions": {
+      "basedir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js"
+    },
+    "injectCss": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "doctype": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "manifest": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "injectHeadRegex": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "injectBodyRegex": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "injectJs": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "crossorigin": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "injectRes": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "fallbackToClient": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+    "cache": {
+      "max": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js",
+      "maxAge": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js"
+    },
+    "afterRender": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-view-vue-ssr\\config\\config.default.js"
+  },
+  "logger": {
+    "consoleLevel": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+    "dir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+    "encoding": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "env": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "level": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "disableConsoleAfterReady": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "outputJSON": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "buffer": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "appLogName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "coreLogName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "agentLogName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "errorLogName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "coreLogger": {
+      "consoleLevel": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.local.js"
+    },
+    "allowDebugAtProd": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "static": {
+    "prefix": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+    "dir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+    "maxAge": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "dynamic": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-static\\config\\config.default.js",
+    "preload": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-static\\config\\config.default.js",
+    "buffer": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-static\\config\\config.default.js",
+    "maxFiles": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-static\\config\\config.default.js"
+  },
+  "keys": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+  "middleware": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+  "development": {
+    "watchDirs": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "ignoreDirs": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "fastReady": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-development\\config\\config.default.js",
+    "reloadOnDebug": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-development\\config\\config.default.js",
+    "overrideDefault": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-development\\config\\config.default.js"
+  },
+  "logview": {
+    "dir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "prefix": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logview\\config\\config.default.js",
+    "staticHost": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logview\\config\\config.default.js"
+  },
+  "webpack": {
+    "browser": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "port": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-webpack\\config\\config.default.js",
+    "proxy": {
+      "host": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-webpack\\config\\config.default.js",
+      "match": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-webpack\\config\\config.default.js"
+    },
+    "webpackConfigList": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-webpack\\config\\config.default.js"
+  },
+  "security": {
+    "domainWhiteList": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
+    "protocolWhiteList": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+    "defaultMiddleware": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+    "csrf": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "useSession": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "ignoreJSON": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "cookieName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "sessionName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "headerName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "bodyName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "queryName": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xframe": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "hsts": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.local.js",
+      "maxAge": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "includeSubdomains": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "dta": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "methodnoallow": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "noopen": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "nosniff": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "referrerPolicy": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "xssProtection": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "value": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "csp": {
+      "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "policy": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    },
+    "ssrf": {
+      "ipBlackList": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js",
+      "checkAddress": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+    }
+  },
+  "session": {
+    "maxAge": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-session\\config\\config.default.js",
+    "key": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-session\\config\\config.default.js",
+    "httpOnly": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-session\\config\\config.default.js",
+    "encrypt": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-session\\config\\config.default.js"
+  },
+  "helper": {
+    "shtml": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-security\\config\\config.default.js"
+  },
+  "jsonp": {
+    "limit": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "callback": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-jsonp\\config\\config.default.js",
+    "csrf": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-jsonp\\config\\config.default.js"
+  },
+  "onerror": {
+    "errorPageUrl": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-onerror\\config\\config.default.js",
+    "appErrorFilter": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-onerror\\config\\config.default.js"
+  },
+  "i18n": {
+    "defaultLocale": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-i18n\\config\\config.default.js",
+    "dirs": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-i18n\\config\\config.default.js",
+    "queryField": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieField": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-i18n\\config\\config.default.js",
+    "cookieMaxAge": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-i18n\\config\\config.default.js"
+  },
+  "watcher": {
+    "type": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-watcher\\config\\config.local.js",
+    "eventSources": {
+      "default": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-watcher\\config\\config.default.js",
+      "development": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-watcher\\config\\config.default.js"
+    }
+  },
+  "multipart": {
+    "autoFields": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "defaultCharset": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldNameSize": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fieldSize": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fields": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileSize": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "files": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "fileExtensions": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js",
+    "whitelist": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-multipart\\config\\config.default.js"
+  },
+  "customLogger": {
+    "scheduleLogger": {
+      "consoleLevel": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-schedule\\config\\config.default.js",
+      "file": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-schedule\\config\\config.default.js"
+    }
+  },
+  "logrotator": {
+    "filesRotateByHour": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "hourDelimiter": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "filesRotateBySize": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFileSize": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxFiles": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "rotateDuration": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js",
+    "maxDays": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-logrotator\\config\\config.default.js"
+  },
+  "serviceworker": {
+    "dir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-serviceworker\\config\\config.default.js",
+    "mapping": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-serviceworker\\config\\config.default.js"
+  },
+  "cors": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-cors\\config\\config.default.js",
+  "env": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "name": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "proxy": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "protocolHeaders": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "ipHeaders": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "hostHeaders": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "pkg": {
+    "name": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "version": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "description": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "scripts": {
+      "debug": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "clean": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "build": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "build:dev": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "build:test": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "build:prod": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "dll": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "dev": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "start": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "kill": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "kill-mac": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "kill-win": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "restart": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "lint": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "fix": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "ii": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "dependencies": {
+      "axios": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "cross-env": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-cors": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-logger": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-serviceworker": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-validate": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-view-vue-ssr": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "element-ui": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "lodash": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "mocha": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "moment": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "service-worker-register": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "vue": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "vue-router": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "vuex": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "vuex-router-sync": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "webpack": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "devDependencies": {
+      "autod-egg": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "autoprefixer": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-add-module-exports": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-syntax-dynamic-import": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-transform-object-assign": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-transform-object-rest-spread": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "babel-plugin-transform-runtime": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "babel-preset-env": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "easywebpack-cli": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "easywebpack-vue": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-bin": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-logview": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-webpack": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "egg-webpack-vue": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "eslint-config-egg": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "eslint-plugin-vue": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "imagemin-webpack-plugin": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "ip": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "less": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "less-loader": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "engines": {
+      "node": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "ci": {
+      "version": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "repository": {
+      "type": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "url": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "author": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "license": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "homepage": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "baseDir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "HOME": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "rundir": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "dump": {
+    "ignore": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "confusedConfigurations": {
+    "bodyparser": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "notFound": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "sitefile": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "middlewares": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "httpClient": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "notfound": {
+    "pageUrl": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "bodyParser": {
+    "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "encoding": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "formLimit": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "jsonLimit": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "strict": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "queryString": {
+      "arrayLimit": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "depth": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "parameterLimit": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "httpclient": {
+    "enableDNSCache": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxLength": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "dnsCacheMaxAge": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "request": {
+      "timeout": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpAgent": {
+      "keepAlive": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    },
+    "httpsAgent": {
+      "keepAlive": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "freeSocketKeepAliveTimeout": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "maxSockets": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "maxFreeSockets": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "meta": {
+    "enable": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+    "logging": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "coreMiddleware": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "workerStartTimeout": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+  "cluster": {
+    "listen": {
+      "path": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "port": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
+      "hostname": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+    }
+  },
+  "clusterClient": {
+    "responseTimeout": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+  },
+  "onClientError": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js"
+}
