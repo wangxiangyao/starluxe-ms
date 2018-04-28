@@ -1,6 +1,7 @@
 import MainLayout from './main';
 
-const tpl = '<div id="app"><MainLayout><div slot="main"><slot></slot></div></MainLayout></div>';
+// const tpl = '<div id="app"></div>';
+const tpl = '<MainLayout><slot></slot></MainLayout>';
 
 export default {
   name: 'AppLayout',
@@ -10,13 +11,13 @@ export default {
   },
   computed: {
     vTitle() {
-      return this.$root.title || this.title || 'Egg + Vue';
+      return this.$root.title || this.title || '想星 - 管理';
     },
     vKeywords() {
-      return this.$root.keywords || this.keywords || 'egg, vue, webpack, server side render';
+      return this.$root.keywords || this.keywords || '想星, 管理';
     },
     vDescription() {
-      return this.$root.description || this.description || 'egg-vue-webpack server side render';
+      return this.$root.description || this.description || '想星的后台管理系统';
     },
     baseClass() {
       return this.$root.baseClass;

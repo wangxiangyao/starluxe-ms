@@ -5,6 +5,8 @@ import app from './app.vue';
 import App from 'app';
 import Layout from 'component/layout/app';
 
+console.log(app);
+
 App.component(Layout.name, Layout);
 
 sync(store, router);

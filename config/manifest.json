@@ -1,6 +1,10 @@
 {
   "app.js": "/public/js/app.js",
+  "js/chunk/0.js": "/public/js/chunk/0.js",
   "js/vendor.js": "/public/js/vendor.js",
+  "img/bg-2.jpeg": "/public/img/bg-2.jpeg",
+  "img/bg-3.jpg": "/public/img/bg-3.jpg",
+  "img/bg.jpg": "/public/img/bg.jpg",
   "vendor.js": "/public/js/vendor.js",
   "deps": {
     "app.js": {
