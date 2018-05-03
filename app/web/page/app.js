@@ -4,8 +4,24 @@ import router from './router';
 import app from './app.vue';
 import App from 'app';
 import Layout from 'component/layout/app';
+import {
+  Button,
+  Input,
+  Menu,
+  Submenu,
+  MenuItem,
+  MenuItemGroup
+} from 'element-ui';
+import Vue from 'vue';
 
-console.log(app);
+App.component(Button.name, Button);
+App.component(Input.name, Input);
+App.component(Menu.name, Menu);
+App.component(Submenu.name, Submenu);
+App.component(MenuItem.name, MenuItem);
+App.component(MenuItemGroup.name, MenuItemGroup);
+
+console.log('这是app', app);
 
 App.component(Layout.name, Layout);
 

@@ -1,17 +1,71 @@
 <template>
   <app-layout>
-    <transition name="fade" mode="out-in">
-      <router-view></router-view>
-    </transition>
+    <global-mask v-if="mask.isShow" />
+    <header id="top">
+      <div class="logo"></div>
+      <div class="topbar-wrapper">
+        <topBar />
+      </div>
+    </header>
+    <main id="center">
+      <div class="navigation">
+        <navigation />
+      </div>
+      <div class="content">
+        <transition name="fade" mode="out-in">
+          <router-view></router-view>
+        </transition>
+      </div>
+    </main>
   </app-layout>
 </template>
 <script type="text/babel">
+  import { mapState, mapMutations } from 'vuex'
+  import * as type from '../store/app/mutation-type'
+
   export default {
     computed: {
-
+      ...mapState(['mask'])
     },
     mounted(){
-
+      // this.showMask({
+      //   type: 'login'
+      // })
+    },
+    methods: {
+      ...mapMutations({
+        showMask: type.SHOW_MASK
+      }),
     }
   }
 </script>
+<style scoped>
+  :root {
+    --顶部高度: 70px;
+    --侧边宽度: 300px;
+  }
+  #top {
+    display: flex;
+  }
+  .logo {
+    min-width: var(--侧边宽度);
+    height: var(--顶部高度);
+    background-color: #ccc;
+  }
+
+  #center {
+    display: flex;
+    height: calc(100vh - var(--顶部高度));
+    width: 100%;
+  }
+  .navigation {
+    width: var(--侧边宽度);
+  }
+  .content {
+    flex: 1;
+  }
+  .topbar-wrapper {
+    flex: 1;
+  }
+</style>
+

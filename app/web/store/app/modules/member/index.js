@@ -5,7 +5,8 @@ export default {
   state() {
     return {
       member: {
-
+        avatar: '',
+        username: ''
       },
     };
   },

@@ -1,0 +1,85 @@
+2018-05-02 12:02:16,289 ERROR 8064 [app.js] server render bundle error, try client render, the server render error E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\normalize.css\normalize.css:11
+html {
+     ^
+
+SyntaxError: Unexpected token {
+    at new Script (vm.js:51:7)
+    at createScript (vm.js:136:10)
+    at Object.runInThisContext (vm.js:197:10)
+    at Module._compile (module.js:613:28)
+    at Object.Module._extensions..js (module.js:660:10)
+    at Module.load (module.js:561:32)
+    at tryModuleLoad (module.js:501:12)
+    at Function.Module._load (module.js:493:3)
+    at Module.require (module.js:593:17)
+    at require (internal/module.js:11:18)
+2018-05-02 12:03:44,972 ERROR 8064 A client (::ffff:127.0.0.1:62927) error [ECONNRESET] occurred: read ECONNRESET
+2018-05-02 15:32:06,866 ERROR 3836 A client (::ffff:127.0.0.1:52441) error [ECONNRESET] occurred: read ECONNRESET
+2018-05-02 16:11:29,040 ERROR 12764 [app.js] server render bundle error, try client render, the server render error ReferenceError: mapState is not defined
+    at eval (webpack:///./app/web/component/mask/mask.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0:11:13)
+    at Object../node_modules/babel-loader/lib/index.js!./node_modules/vue-loader/lib/selector.js?type=script&index=0!./app/web/component/mask/mask.vue (__vue_ssr_bundle__:347:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/component/mask/mask.vue?:2:137)
+    at Object../app/web/component/mask/mask.vue (__vue_ssr_bundle__:145:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/framework/vue/component/index.js?:5:81)
+    at Object../app/web/framework/vue/component/index.js (__vue_ssr_bundle__:169:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/framework/vue/app.js?:7:68)
+2018-05-02 16:11:29,043 ERROR 12764 nodejs.TypeError: Cannot read property 'call' of undefined
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'TypeError'
+pid: 12764
+hostname: wxy
+
+2018-05-02 16:11:59,563 ERROR 12764 nodejs.TypeError: Cannot read property 'call' of undefined
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'TypeError'
+pid: 12764
+hostname: wxy
+
+2018-05-02 16:12:13,441 ERROR 12764 nodejs.TypeError: Cannot read property 'call' of undefined
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+name: 'TypeError'
+pid: 12764
+hostname: wxy
+
+2018-05-02 17:17:27,296 ERROR 12764 [app.js] server render bundle error, try client render, the server render error TypeError: Cannot read property 'collapse' of undefined
+    at Proxy.levelPadding (webpack:///./node_modules/element-ui/lib/menu-item-group.js?:285:25)
+    at Proxy.render (webpack:///./node_modules/element-ui/lib/menu-item-group.js?:303:216)
+    at VueComponent.Vue._render (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:4542:22)
+    at renderComponentInner (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7521:25)
+    at renderComponent (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7491:5)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7407:5)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+    at RenderContext.cachedWrite [as write] (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2287:9)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7418:13)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+2018-05-02 17:18:44,920 ERROR 12764 [app.js] server render bundle error, try client render, the server render error TypeError: Cannot read property 'collapse' of undefined
+    at Proxy.levelPadding (webpack:///./node_modules/element-ui/lib/menu-item-group.js?:285:25)
+    at Proxy.render (webpack:///./node_modules/element-ui/lib/menu-item-group.js?:303:216)
+    at VueComponent.Vue._render (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:4542:22)
+    at renderComponentInner (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7521:25)
+    at renderComponent (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7491:5)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7407:5)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+    at RenderContext.cachedWrite [as write] (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2287:9)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7418:13)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+2018-05-03 11:53:14,087 ERROR 4276 [app.js] server render bundle error, try client render, the server render error TypeError: Cannot read property 'to' of undefined
+    at eval (webpack:///./app/web/component/navigation/navigation.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-3608b65c%22,%22hasScoped%22:false,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:59:66)
+    at Proxy.renderList (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:3703:16)
+    at eval (webpack:///./app/web/component/navigation/navigation.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-3608b65c%22,%22hasScoped%22:false,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:54:39)
+    at Proxy.renderList (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:3703:16)
+    at eval (webpack:///./app/web/component/navigation/navigation.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-3608b65c%22,%22hasScoped%22:false,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:35:27)
+    at Proxy.renderList (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:3703:16)
+    at Proxy.render (webpack:///./app/web/component/navigation/navigation.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-3608b65c%22,%22hasScoped%22:false,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:20:15)
+    at VueComponent.Vue._render (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:4542:22)
+    at renderComponentInner (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7521:25)
+    at renderComponent (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7491:5)

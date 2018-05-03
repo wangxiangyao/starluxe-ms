@@ -13,12 +13,12 @@ const router = new VueRouter({
     {
       path: '/',
       name: 'root',
-      redirect: '/member'
+      redirect: '/home'
     },
     {
-      name: 'login',
-      path: '/login',
-      component: () => import('../view/login/login.vue')
+      name: 'home',
+      path: '/home',
+      component: () => import('../view/home/home.vue')
     },
     {
       name: 'member',

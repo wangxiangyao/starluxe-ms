@@ -28,6 +28,15 @@ const state = {
     id: '',
     isLoading: false,
     needDestroy: false
+  },
+  mask: {
+    isShow: false,
+    type: '',
+    all: ['login', 'error', 'success', 'hite', 'warning']
+  },
+  menu: {
+    ready: false,
+    item: []
   }
 };
 
