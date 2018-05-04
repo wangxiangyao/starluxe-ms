@@ -59,6 +59,10 @@
     "maxFiles": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg-static\\config\\config.default.js"
   },
   "keys": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+  "proxy": {
+    "baseURL": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
+    "proxyPath": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js"
+  },
   "middleware": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.default.js",
   "development": {
     "watchDirs": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\config\\config.local.js",
@@ -193,7 +197,6 @@
   },
   "env": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
   "name": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
-  "proxy": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
   "protocolHeaders": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
   "ipHeaders": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",
   "hostHeaders": "E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\node_modules\\egg\\config\\config.default.js",

@@ -31,8 +31,14 @@ module.exports = app => {
 
   exports.keys = '123456';
 
+  exports.proxy = {
+    baseURL: 'http://star003.starluxe.cn:8081', // 要代理到的后端的url
+    proxyPath: '/api/v1' // 要代理的路径
+  };
+
   exports.middleware = [
-    'access'
+    'access',
+    'proxy'
   ];
 
   return exports;

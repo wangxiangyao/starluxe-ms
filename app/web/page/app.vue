@@ -59,10 +59,12 @@
     width: 100%;
   }
   .navigation {
+    flex: none;
     width: var(--侧边宽度);
   }
   .content {
     flex: 1;
+    background-color: var(--背景色);
   }
   .topbar-wrapper {
     flex: 1;

@@ -32,6 +32,7 @@ const state = {
   mask: {
     isShow: false,
     type: '',
+    message: '',
     all: ['login', 'error', 'success', 'hite', 'warning']
   },
   menu: {

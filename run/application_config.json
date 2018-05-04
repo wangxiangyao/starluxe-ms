@@ -229,7 +229,10 @@
     "env": "local",
     "name": "egg-vue-webpack-spa-boilerplate",
     "keys": "<String len: 6>",
-    "proxy": false,
+    "proxy": {
+      "baseURL": "http://star003.starluxe.cn:8081",
+      "proxyPath": "/api/v1"
+    },
     "protocolHeaders": "x-forwarded-proto",
     "ipHeaders": "x-forwarded-for",
     "hostHeaders": "",
@@ -423,7 +426,8 @@
     },
     "onClientError": null,
     "middleware": [
-      "access"
+      "access",
+      "proxy"
     ],
     "coreMiddlewares": "~config~coreMiddleware",
     "appMiddlewares": "~config~middleware",

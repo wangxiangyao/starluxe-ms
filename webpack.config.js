@@ -10,6 +10,7 @@ module.exports = {
     component: 'app/web/component',
     framework: 'app/web/framework',
     store: 'app/web/store',
+    web: 'app/web',
     vue: 'vue/dist/vue.esm.js',
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
