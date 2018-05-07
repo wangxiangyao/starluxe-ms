@@ -507,3 +507,17 @@
 2018-05-04 11:34:19,208 INFO 3492 [egg-watcher:app] watcher start success
 2018-05-04 13:20:37,088 WARN 3492 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
 2018-05-04 13:20:38,672 WARN 3492 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-05-07 09:37:48,664 INFO 592 [egg:logger] init all loggers with options: {"dir":"E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-vue-webpack-spa-boilerplate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-07 09:37:48,867 INFO 592 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\clean_log.js
+2018-05-07 09:37:48,867 INFO 592 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2018-05-07 09:37:49,477 INFO 592 [egg-static] starting static serve /public/ -> E:\develop\xingxiang\Starluxe-ms-interlayer\public
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use csrf middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use methodnoallow middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use noopen middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use nosniff middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use xssProtection middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use xframe middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] use dta middleware
+2018-05-07 09:37:49,492 INFO 592 [egg-security] compose 7 middlewares into one security middleware
+2018-05-07 09:37:49,586 INFO 592 [egg-watcher:app] watcher start success
+2018-05-07 13:37:41,604 WARN 592 [ClusterClient:Watcher] follower closed, and try to init it again

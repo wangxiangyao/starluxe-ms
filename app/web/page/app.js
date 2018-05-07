@@ -10,7 +10,12 @@ import {
   Menu,
   Submenu,
   MenuItem,
-  MenuItemGroup
+  MenuItemGroup,
+  Table,
+  TableColumn,
+  Form,
+  FormItem,
+  Pagination
 } from 'element-ui';
 import Vue from 'vue';
 
@@ -20,6 +25,11 @@ App.component(Menu.name, Menu);
 App.component(Submenu.name, Submenu);
 App.component(MenuItem.name, MenuItem);
 App.component(MenuItemGroup.name, MenuItemGroup);
+App.component(Table.name, Table);
+App.component(TableColumn.name, TableColumn);
+App.component(Form.name, Form);
+App.component(FormItem.name, FormItem);
+App.component(Pagination.name, Pagination);
 
 console.log('这是app', app);
 

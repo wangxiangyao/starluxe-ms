@@ -5,7 +5,12 @@
       <filtration />
     </div>
     <div class="content-wrapper">
-      <list :page="page" :pageSum="pageSum" :list="byPage" :isLoading="isLoading" />
+      <div class="list-wrapper">
+        <list :page="page" :pageSum="pageSum" :list="byPage" :isLoading="isLoading" :tableColumn="tableColumn"
+          @changePage="handleChangePage"
+        />
+      </div>
+      
     </div>
   </div>
 </template>
@@ -54,10 +59,13 @@
     },
     computed: {
       ...mapState(['byPage', 'page', 'pageSum', 'isLoading']),
-      ...mapGetters(['filterConfig'])
+      ...mapGetters(['filterConfig', 'tableColumn'])
     },
     methods: {
-      ...mapActions(['getMembersIfNeed'])
+      ...mapActions(['getMembersIfNeed', 'changePage']),
+      handleChangePage(val) {
+        this.changePage(val);
+      }
     }
   }
 </script>
@@ -69,15 +77,20 @@
     padding: 0 20px;
   }
   .title {
+    flex: none;
     padding: 20px 0;
     font-size: 20px;
   }
   .filter-wrapper {
     display: flex;
+    flex: none;
   }
   .content-wrapper {
-    flex: 1;
+    flex: none;
     padding: 20px 0 20px;
+  }
+  .list-wrapper {
+    height: 689px;
   }
 </style>
 
