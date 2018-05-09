@@ -6,6 +6,7 @@ axios.defaults.headers.common.Authorization = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIx
 
 export default {
   getMemberList(config) {
+    console.log('请求用户列表，配置项为：', config);
     return axios.get('/user', {
       params: {
         ...config

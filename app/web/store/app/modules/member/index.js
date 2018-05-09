@@ -130,6 +130,15 @@ export default {
         message: '',
       },
       filterMap: {
+        /**
+         * 每一项：
+         * - type表示输入类型
+         * - kind表示此过滤项对应的组件类别
+         * - text 表示此项的中文描述
+         * - value 是过滤项的值
+         * - isEnum 表示是否为枚举值，如果是枚举值
+         *  - enum，是枚举值的各个值：val表示值，text表示中文描述
+         */
         userId: {
           type: 'String',
           value: '',
@@ -146,7 +155,7 @@ export default {
         },
         sex: {
           type: 'String',
-          value: '',
+          value: 'MALE',
           text: '性别',
           isEnum: true,
           enum: [
@@ -162,7 +171,7 @@ export default {
         },
         mobile: {
           type: 'String',
-          value: '',
+          value: '13213195318',
           text: '电话',
           isEnum: false,
           kind: 'input'
@@ -247,8 +256,9 @@ export default {
         },
         registerTime: {
           type: 'Array',
-          value: [],
+          value: [1483264645000, 1525859872000],
           isEnum: false,
+          text: '注册时间区间：',
           kind: 'datePicker'
         }
       }
@@ -256,14 +266,33 @@ export default {
   },
   getters: {
     filterConfig: state => {
+      // 同样，需要根据权限地图，获得当卡用户可用的过滤项
+      /**
+       * 关于过滤项策略：
+       *  过滤统一保存在filterMap中
+       *  filterConfig用于根据权限地图选择过滤项
+       *  提交过滤时候（下边的pureFilterConfig），通过遍历filterConfig，判断value，如果是空，就不传递此过滤项
+       *    空值判断
+       *      - String：空字符串
+       *      - Array：空数组
+       */
       return JSON.parse(JSON.stringify(state.filterMap));
     },
-    pureFilterConfig: state => {
-      // 纯过滤配置，用于传给后端
+    pureFilterConfig: (state, getters) => {
       const c = {};
-      for (const [key, value] of Object.entries(state.filterMap)) {
-        if (value.value !== '' || value.value.length !== 0) {
-          c[key] = value.value;
+      for (const [key, value] of Object.entries(getters.filterConfig)) {
+        if (value.value !== '' && value.value.length !== 0) {
+          if (Array.isArray(value.value)) {
+            //  对于数组，判断是否所有项都为空值项，如果不是，再添加进有效配置项
+            const arr = value.value.filter(item => {
+              return item !== '';
+            });
+            if (arr.length !== 0) {
+              c[key] = `[${value.value.join(',')}]`;
+            }
+          } else {
+            c[key] = value.value;
+          }
         }
       }
       return c;
@@ -286,7 +315,6 @@ export default {
       console.log('请求members');
       const { pureFilterConfig } = getters;
       const { page, limit } = state;
-
       commit(TYPE.LOADING, { type: 0 });
       api.getMemberList({
         ...pureFilterConfig,
@@ -294,10 +322,9 @@ export default {
         limit
       })
         .then(res => {
-          console.log('成功:', res);
+          console.log('用户列表请求响应:', res);
           if (res.status === 200) {
             commit(TYPE.STORE_MEMBER, res.data);
-            console.log(state.byPage[state.page]);
           }
         })
         .catch(err => {
@@ -307,6 +334,18 @@ export default {
     changePage({ dispatch, commit }, page) {
       commit(TYPE.CHANGE_PAGE, page);
       dispatch('getMembersIfNeed');
+    },
+    changeFilter({ dispatch, commit }, { type = 'all', data = {} } = {}) {
+      /**
+       * 只要改变了过滤条件，则直接触发重新获取数据（不用判断销毁状态）
+       */
+      if (type === 'all') {
+        commit(TYPE.CHANGE_FILTER, data);
+      } else if (type === 'empty') {
+        commit(TYPE.EMPTY_FILTER_ONE, data);
+      }
+      commit(TYPE.DESTORY, { type: 0 });
+      dispatch('getMembers');
     }
   },
   mutations: {
@@ -394,6 +433,24 @@ export default {
         default:
           throw new Error('不存在的loading类型。');
       }
+    },
+    [TYPE.EMPTY_FILTER_ONE](state, name) {
+      // 根据type判断空值类型
+      const config = state.filterMap[name];
+      const type = config.type;
+      switch (type) {
+        case 'String':
+          config.value = '';
+          break;
+        case 'Array':
+          config.value = [];
+          break;
+        default:
+      }
+    },
+    [TYPE.CHANGE_FILTER](state, data) {
+      // 批量更改，直接覆盖
+      state.filterMap = Object.assign({}, state.filterMap, data);
     }
   }
 };
@@ -459,7 +516,6 @@ function isNeedDestroy({ state, commit }, { type = 0, page, id } = {}) {
   let ctx = state; // 当前级别的module
   let currentType = 0;
   for (; ;) {
-    console.log(currentType);
     const { needDestroy, lastUpdate } = ctx;
     if (needDestroy === undefined) {
       // 如果没有定义needDestroy表示需要请求
@@ -500,3 +556,12 @@ function isNeedDestroy({ state, commit }, { type = 0, page, id } = {}) {
     }
   }
 }
+// function pureFilterConfig(config) {
+//   const c = {};
+//   for (const [key, value] of Object.entries(config)) {
+//     if (value.value !== '' && value.value.length !== 0) {
+//       c[key] = value.value;
+//     }
+//   }
+//   return c;
+// }

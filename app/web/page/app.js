@@ -15,7 +15,8 @@ import {
   TableColumn,
   Form,
   FormItem,
-  Pagination
+  Pagination,
+  Tag
 } from 'element-ui';
 import Vue from 'vue';
 
@@ -30,6 +31,7 @@ App.component(TableColumn.name, TableColumn);
 App.component(Form.name, Form);
 App.component(FormItem.name, FormItem);
 App.component(Pagination.name, Pagination);
+App.component(Tag.name, Tag);
 
 console.log('这是app', app);
 

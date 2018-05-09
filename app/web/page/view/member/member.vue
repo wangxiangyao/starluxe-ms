@@ -2,7 +2,9 @@
   <div id="member">
     <div class="title">Member Management</div>
     <div class="filter-wrapper">
-      <filtration />
+      <filtration :filterProps="filterConfig" :config="pureFilterConfig"
+        @closeTag="handleEmptyFilterOne"
+      />
     </div>
     <div class="content-wrapper">
       <div class="list-wrapper">
@@ -59,12 +61,19 @@
     },
     computed: {
       ...mapState(['byPage', 'page', 'pageSum', 'isLoading']),
-      ...mapGetters(['filterConfig', 'tableColumn'])
+      ...mapGetters(['filterConfig', 'pureFilterConfig', 'tableColumn'])
     },
     methods: {
-      ...mapActions(['getMembersIfNeed', 'changePage']),
+      ...mapActions(['getMembersIfNeed', 'changePage', 'changeFilter']),
       handleChangePage(val) {
         this.changePage(val);
+      },
+      handleEmptyFilterOne(name) {
+        console.log('清空一个过滤项：', name)
+        this.changeFilter({
+          type: 'empty',
+          data: name
+        })
       }
     }
   }
@@ -74,6 +83,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
+    width: 100%;
     padding: 0 20px;
   }
   .title {
@@ -86,11 +96,14 @@
     flex: none;
   }
   .content-wrapper {
-    flex: none;
+    flex: 1;
+    max-height: calc(100% - 110px);
+    max-width: 100%;
     padding: 20px 0 20px;
   }
   .list-wrapper {
-    height: 689px;
+    height: 100%;
+    width: 100%;
   }
 </style>
 

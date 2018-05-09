@@ -4,10 +4,11 @@
       <loading />
     </div>
     <div class="afterLoading" v-else>
-      <div class="content">
+      <div class="content" ref="content">
         <el-table
         :data="currentList"
-        style="width: 100%">
+        style="width: 100%"
+        :max-height="tableMaxHeight">
           <el-table-column type="expand">
             <template slot-scope="props">
               <el-form label-position="left" inline class="table-expand">
@@ -63,7 +64,8 @@
         cloumnDefaultStyle: {
           width: 100
         },
-        currentPage: this.page
+        currentPage: this.page,
+        tableMaxHeight: 250
       }
     },
     computed: {
@@ -79,8 +81,15 @@
         }
       }
     },
+    mounted() {
+      
+    },
     updated(){
       // console.log(this.content.list[this.content.page]);
+      if (!this.isLoading) {
+        console.log(this.$refs)
+        this.tableMaxHeight = this.$refs.content.clientHeight
+      }
     },
     methods: {
       handleCurrentChange(page) {
@@ -92,27 +101,35 @@
 <style scoped>
   .list {
     height: 100%;
+    width: 100%;
+    --分页器上padding: 20px; 
   }
   .loading {
     height: 100%;
   }
-  .content {
-    height: 100%;
-    width: calc(100vw - var(--侧边宽度) - 40px);
-  }
-  .pagination-wrapper {
+  .afterLoading {
     display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+  }
+  .list .content {
+    flex: 1;
+    height: calc(100% - var(--分页器上padding) - 32px);
+    max-width: 100%;
+    overflow: auto; 
+  }
+  .list .pagination-wrapper {
+    display: flex;
+    flex: none;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    padding-top: var(--分页器上padding);
   }
 </style>
 <style>
   .list .el-table {
     height: 100%;
-  }
-  .list .el-table__body-wrapper {
-    height: calc(689px - 48px);
     overflow: auto;
   }
   .table-expand {

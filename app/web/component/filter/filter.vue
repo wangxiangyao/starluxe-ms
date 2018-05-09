@@ -1,12 +1,24 @@
 <template>
   <div class="filtration">
-    我是过滤器
+    <div class="unfold" v-if="isUnfold">
+      展开
+    </div>
+    <div class="pack-up" v-else>
+      <el-tag
+        :style="{marginRight: '20px'}"
+        v-for="(value, key) in config"
+        :key="key"
+        closable
+        @close="handleEmptyOne(key)">
+        {{`${filterProps[key].text}：${value}`}}
+      </el-tag>
+    </div>
   </div>
 </template>
 <script type="text/babel">
   /**
     从对应store中引入过滤配置 下对应各个过滤配置引用 { filterProps: Object, config: Object }
-    filterProps是组件的props设置，config是具体配置项设置：
+    filterProps是组件的所有过滤设置，config是当前有效的设置项（用户选择过的）：
       - 配置项名称，
       - 类型，
       - form类型，
@@ -15,14 +27,53 @@
         - 当前条件改变，前置条件改动到合适位置
       - 是否枚举，
         - 枚举集合
-
    */
 
+  /**
+   * 可能的form类型： input radio/select DateTimePicker
+   * 枚举值使用radio/select:如果枚举超过三个，使用select
+   */
+
+  /**
+   * 组件样式说明：
+   * 过滤器可以展开收起：
+   * - 收起：收起行高50px，从左到右排，以小卡片形式排列有效筛选项，可点击小X 清空此筛选项。在鼠标hover时，显示展开按钮，单机空白区域或者展开按钮，展开具体过滤项
+   * - 展开：展开后，显示所有可用过滤项，按输入类别分类排列。点击确定按钮，收起并更新过滤项。点击取消按钮，撤销本次所有过滤更改，还原至上次过滤条件并收起
+   */
   export default {
-    name: 'filtration'
+    name: 'filtration',
+    props: {
+      filterProps: {
+        type: Object,
+        default() {
+          return {}
+        }
+      },
+      config: {
+        type: Object,
+        default() {
+          return {}
+        }
+      }
+    },
+    data() {
+      return {
+        isUnfold: false // 是否展开标志
+      }
+    },
+    methods: {
+      handleEmptyOne(name) {
+        this.$emit('closeTag', name);
+      }
+    }
   }
 </script>
-<style>
-
+<style scoped>
+  .filtration {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+  }
 </style>
 

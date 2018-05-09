@@ -64,6 +64,7 @@
   }
   .content {
     flex: 1;
+    width: calc(100% - var(--侧边宽度));
     background-color: var(--背景色);
   }
   .topbar-wrapper {
