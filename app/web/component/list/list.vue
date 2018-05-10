@@ -8,8 +8,11 @@
         <el-table
         :data="currentList"
         style="width: 100%"
-        :max-height="tableMaxHeight">
-          <el-table-column type="expand">
+        :max-height="tableMaxHeight"
+        :style="{minHeight: `${tableMaxHeight}px`}"
+        @row-dblclick="handleTableRowDbclick"
+        @row-click="handleTableRowClick">
+          <el-table-column type="expand" fixed>
             <template slot-scope="props">
               <el-form label-position="left" inline class="table-expand">
                 <el-form-item v-for="extend in tableColumn.extend" :key="extend.prop" :label="extend.label">
@@ -19,6 +22,7 @@
             </template>
           </el-table-column>
           <el-table-column v-for="column in tableColumn.show" :key="column.prop"
+            :fixed="column.prop === 'id'"
             :prop="column.prop"
             :label="column.label"
             :min-width="column.width ? column.width : cloumnDefaultStyle.width">
@@ -94,6 +98,12 @@
     methods: {
       handleCurrentChange(page) {
         this.$emit('changePage', page)
+      },
+      handleTableRowDbclick(row, event) {
+        console.log('双击行：', row)
+      },
+      handleTableRowClick(row, event) {
+        // console.log('单击行：', row)
       }
     }
   }

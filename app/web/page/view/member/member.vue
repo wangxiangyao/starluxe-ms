@@ -4,6 +4,7 @@
     <div class="filter-wrapper">
       <filtration :filterProps="filterConfig" :config="pureFilterConfig"
         @closeTag="handleEmptyFilterOne"
+        @filter="handleFilter"
       />
     </div>
     <div class="content-wrapper">
@@ -57,14 +58,14 @@
       }
     },
     created() {
-      this.getMembersIfNeed();
+      this.getListIfNeed();
     },
     computed: {
       ...mapState(['byPage', 'page', 'pageSum', 'isLoading']),
       ...mapGetters(['filterConfig', 'pureFilterConfig', 'tableColumn'])
     },
     methods: {
-      ...mapActions(['getMembersIfNeed', 'changePage', 'changeFilter']),
+      ...mapActions(['getListIfNeed', 'changePage', 'changeFilter']),
       handleChangePage(val) {
         this.changePage(val);
       },
@@ -73,6 +74,12 @@
         this.changeFilter({
           type: 'empty',
           data: name
+        })
+      },
+      handleFilter(filter) {
+        this.changeFilter({
+          type: 'all',
+          data: filter
         })
       }
     }

@@ -16,7 +16,14 @@ import {
   Form,
   FormItem,
   Pagination,
-  Tag
+  Tag,
+  Radio,
+  RadioGroup,
+  RadioButton,
+  Select,
+  Option,
+  OptionGroup,
+  DatePicker
 } from 'element-ui';
 import Vue from 'vue';
 
@@ -32,6 +39,14 @@ App.component(Form.name, Form);
 App.component(FormItem.name, FormItem);
 App.component(Pagination.name, Pagination);
 App.component(Tag.name, Tag);
+App.component(Input.name, Input);
+App.component(Radio.name, Radio);
+App.component(RadioGroup.name, RadioGroup);
+App.component(RadioButton.name, RadioButton);
+App.component(Select.name, Select);
+App.component(Option.name, Option);
+App.component(OptionGroup.name, OptionGroup);
+App.component(DatePicker.name, DatePicker);
 
 console.log('这是app', app);
 

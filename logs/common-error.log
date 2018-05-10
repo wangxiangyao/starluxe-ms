@@ -198,3 +198,36 @@ hostname: wxy
     at Store.dispatch (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:428:15)
     at Store.boundDispatch [as dispatch] (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:334:21)
     at local.dispatch (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:636:20)
+2018-05-10 11:23:10,648 ERROR 12336 nodejs.EPERMError: Error watching file for changes: EPERM
+    at FSEvent.FSWatcher._handle.onchange (fs.js:1386:9)
+errno: 'EPERM'
+code: 'EPERM'
+syscall: 'Error watching file for changes:'
+filename: null
+dir: 'E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\app\\web\\tool.js'
+name: 'EPERMError'
+pid: 12336
+hostname: wxy
+
+2018-05-10 17:35:00,124 ERROR 6820 [app.js] server render bundle error, try client render, the server render error TypeError: Cannot read property 'item' of undefined
+    at VueComponent.currentList (webpack:///./app/web/component/list/list.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0:41:67)
+    at Object.get (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:1918:20)
+    at Proxy.render (webpack:///./app/web/component/list/list.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-976422c8%22,%22hasScoped%22:true,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:30:33)
+    at VueComponent.Vue._render (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:4542:22)
+    at renderComponentInner (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7521:25)
+    at renderComponent (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7491:5)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7407:5)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+    at cachedWrite (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2287:9)
+    at renderStringNode$1 (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7612:5)
+2018-05-10 17:37:33,247 ERROR 6820 [app.js] server render bundle error, try client render, the server render error TypeError: Cannot read property 'item' of undefined
+    at VueComponent.currentList (webpack:///./app/web/component/list/list.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0:41:67)
+    at Object.get (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:1918:20)
+    at Proxy.render (webpack:///./app/web/component/list/list.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-976422c8%22,%22hasScoped%22:true,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:30:33)
+    at VueComponent.Vue._render (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:4542:22)
+    at renderComponentInner (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7521:25)
+    at renderComponent (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7491:5)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7407:5)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+    at cachedWrite (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2287:9)
+    at renderStringNode$1 (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7612:5)

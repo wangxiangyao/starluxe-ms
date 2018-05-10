@@ -534,3 +534,29 @@
 2018-05-09 14:00:23,589 INFO 2896 [egg-security] use dta middleware
 2018-05-09 14:00:23,589 INFO 2896 [egg-security] compose 7 middlewares into one security middleware
 2018-05-09 14:00:23,646 INFO 2896 [egg-watcher:app] watcher start success
+2018-05-09 18:25:49,995 INFO 1872 [egg:logger] init all loggers with options: {"dir":"E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-vue-webpack-spa-boilerplate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-09 18:25:50,117 INFO 1872 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\clean_log.js
+2018-05-09 18:25:50,117 INFO 1872 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2018-05-09 18:25:50,691 INFO 1872 [egg-static] starting static serve /public/ -> E:\develop\xingxiang\Starluxe-ms-interlayer\public
+2018-05-09 18:25:50,697 INFO 1872 [egg-security] use csrf middleware
+2018-05-09 18:25:50,699 INFO 1872 [egg-security] use methodnoallow middleware
+2018-05-09 18:25:50,700 INFO 1872 [egg-security] use noopen middleware
+2018-05-09 18:25:50,701 INFO 1872 [egg-security] use nosniff middleware
+2018-05-09 18:25:50,702 INFO 1872 [egg-security] use xssProtection middleware
+2018-05-09 18:25:50,703 INFO 1872 [egg-security] use xframe middleware
+2018-05-09 18:25:50,704 INFO 1872 [egg-security] use dta middleware
+2018-05-09 18:25:50,704 INFO 1872 [egg-security] compose 7 middlewares into one security middleware
+2018-05-09 18:25:50,790 INFO 1872 [egg-watcher:app] watcher start success
+2018-05-10 10:25:03,524 INFO 6820 [egg:logger] init all loggers with options: {"dir":"E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-vue-webpack-spa-boilerplate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-10 10:25:03,672 INFO 6820 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\clean_log.js
+2018-05-10 10:25:03,672 INFO 6820 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2018-05-10 10:25:04,280 INFO 6820 [egg-static] starting static serve /public/ -> E:\develop\xingxiang\Starluxe-ms-interlayer\public
+2018-05-10 10:25:04,286 INFO 6820 [egg-security] use csrf middleware
+2018-05-10 10:25:04,288 INFO 6820 [egg-security] use methodnoallow middleware
+2018-05-10 10:25:04,289 INFO 6820 [egg-security] use noopen middleware
+2018-05-10 10:25:04,290 INFO 6820 [egg-security] use nosniff middleware
+2018-05-10 10:25:04,291 INFO 6820 [egg-security] use xssProtection middleware
+2018-05-10 10:25:04,292 INFO 6820 [egg-security] use xframe middleware
+2018-05-10 10:25:04,293 INFO 6820 [egg-security] use dta middleware
+2018-05-10 10:25:04,293 INFO 6820 [egg-security] compose 7 middlewares into one security middleware
+2018-05-10 10:25:04,355 INFO 6820 [egg-watcher:app] watcher start success
