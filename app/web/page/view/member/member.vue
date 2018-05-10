@@ -19,6 +19,9 @@
 </template>
 <script type="text/babel">
   /**
+   * TODO: 双击，跳转到对应详情页
+   */
+  /**
     表单处理策略：
       局部保存表单数据
       得到提交事件再更改vuex中对应数据

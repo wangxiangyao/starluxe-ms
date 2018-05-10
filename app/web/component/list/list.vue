@@ -43,6 +43,9 @@
 </template>
 <script type="text/babel">
   /**
+   * TODO: 双击往外发送双击事件
+   */
+  /**
    * 局部mask
    *  - 展示loading
    * 列表

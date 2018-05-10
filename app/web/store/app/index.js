@@ -20,6 +20,10 @@ const env = EASY_ENV_IS_DEV ? 'dev' :
 
 /* eslint-enable */
 
+/**
+ * TODO: 全局反馈的数据流动设计（mask）
+ * TODO: 权限地图
+ */
 const state = {
   token: '',
   host,

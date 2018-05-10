@@ -68,6 +68,10 @@
 </template>
 <script type="text/babel">
   /**
+   * TODO: 回车键等于点确定
+   * TODO: 点击空白，等于取消
+   */
+  /**
     从对应store中引入过滤配置 下对应各个过滤配置引用 { filterProps: Object, config: Object }
     filterProps是组件的所有过滤设置，config是当前有效的设置项（用户选择过的）：
       - 配置项名称，
