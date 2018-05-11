@@ -4,10 +4,26 @@
  * config:
  * - 必传字段
  *  listActivityTimeBucket: 活性时长，时间戳
- *  name: 当前module名字，用于调用api时候传递
+ *  name: 当前module名字，用于调用api时候传递，生成新的list时候，需要在api下边添加新的路由
  *  state:
  *    filterMap
  *    dataMap
+ */
+/**
+ * 可选扩展字段: extend 策略：
+ * extend：包含list的state, actions, mutations等字段。
+ * 对于，actions,mutations,Getters等字段，在各个字段对应下的方法将根据规则扩展到对应位置。
+ * 对于state, 将会覆盖（TODO: 具体规则）
+ */
+/**
+ * filterMap说明：
+ * 每一项：
+ * - type表示输入类型
+ * - kind表示此过滤项对应的组件类别
+ * - text 表示此项的中文描述
+ * - value 是过滤项的值
+ * - isEnum 表示是否为枚举值，如果是枚举值
+ *  - enum，是枚举值的各个值：val表示值，text表示中文描述
  */
 
 import * as TYPE from './mutatison-type';
@@ -18,6 +34,14 @@ import { isNeedDestroy, normalise } from './tool.js';
 export default function initListModule(config = {}) {
   const LIST_ACTIVITY_TIME_BUCKET = config.listActivityTimeBucket;
   const { name, state, getters, actions, mutations } = config;
+
+  const extend = {
+    state: {},
+    getters: {},
+    actions: {},
+    mutations: {},
+    ...config.extend
+  };
 
   return {
     namespaced: true,
@@ -48,7 +72,14 @@ export default function initListModule(config = {}) {
           type: '',
           message: '',
         },
-        tableColumn: {},
+        /**
+         * dataMap: 当前list的table项，包括，详情，列表预览，所有可能的table字段
+         *  - tableColumn 列表预览的配置
+         *    - show 列表预览表头
+         *    - extend 列表展开form
+         *  - detail 详情页的form配置
+         */
+        dataMap: {},
         filterMap: {},
         ...state,
       };
@@ -86,18 +117,25 @@ export default function initListModule(config = {}) {
         }
         return c;
       },
-      tableColumn: state => {
+      tableColumn: (state, getters) => {
         // 根据全局的权限地图，由state.tableColumn计算出当前用户可用的tableColumn
         // TODO: 关于计算函数，应当抽象出来
         // 目前的话，先直接返回列数据
-        return state.tableColumn;
+        return getters.dataMap.tableColumn;
+      },
+      detail: (state, getters) => {
+        return getters.dataMap.detail;
+      },
+      dataMap: state => {
+        // 根据权限地图，返回dataMap
+        return state.dataMap;
       },
       ...getters
     },
     actions: {
       getListIfNeed({ state, dispatch, commit }) {
         // 根据缓存情况，判断是否请求数据
-        if (isNeedDestroy({ state, commit }, { type: 1, page: state.page })) {
+        if (isNeedDestroy({ state, commit }, { type: 1, page: state.page, LIST_ACTIVITY_TIME_BUCKET })) {
           dispatch('getList');
         }
       },
@@ -105,6 +143,7 @@ export default function initListModule(config = {}) {
         console.log('请求list:', name);
         const { pureFilterConfig } = getters;
         const { page, limit } = state;
+        const { getList } = extend.actions;
         commit(TYPE.LOADING, { type: 0 });
         api.getList(name, {
           ...pureFilterConfig,
@@ -113,6 +152,9 @@ export default function initListModule(config = {}) {
         })
           .then(res => {
             console.log('用户列表请求响应:', res);
+            if (getList) {
+              res = getList(res);
+            }
             if (res.status === 200) {
               commit(TYPE.STORE, res.data);
             }
@@ -129,11 +171,21 @@ export default function initListModule(config = {}) {
         /**
          * 只要改变了过滤条件，则直接触发重新获取数据（不用判断销毁状态）
          */
+        /**
+         * type: all empty-one empty-all
+         */
         if (type === 'all') {
           commit(TYPE.CHANGE_FILTER, data);
-        } else if (type === 'empty') {
+        } else if (type === 'empty-one') {
           commit(TYPE.EMPTY_FILTER_ONE, data);
+        } else if (type === 'empty-all') {
+          // TODO: 看情况，还没有做
+          commit(TYPE.EMPTY_FILTER);
         }
+        commit(TYPE.DESTORY, { type: 0 });
+        dispatch('getList');
+      },
+      refresh({ dispatch, commit }) {
         commit(TYPE.DESTORY, { type: 0 });
         dispatch('getList');
       },

@@ -137,95 +137,99 @@ const memberModule = init({
         kind: 'datePicker'
       }
     },
-    tableColumn: {
-      show: [
-        // 所有的可显示列，服务端渲染进来
-        {
-          label: '用户ID',
-          prop: 'id',
-          width: '70'
-        },
-        {
-          label: '手机号',
-          prop: 'mobile',
-          width: '150'
-        },
-        {
-          label: '昵称',
-          prop: 'nickName',
-          width: '150'
-        },
-        {
-          label: '用户类型',
-          prop: 'typeName'
-        },
-        {
-          label: '性别',
-          prop: 'sexName'
-        },
-        {
-          label: '所属渠道',
-          prop: 'shareOriginChannel'
-        },
-        {
-          label: 'be shared by',
-          prop: 'shareOriginUserId',
-          width: '150'
-        },
-        {
-          label: '注册时间',
-          prop: 'createDatetimeStr',
-          width: '160'
-        },
-        {
-          label: 'isHave包期卡',
-          prop: 'periodCardHoldFlag',
-          width: '140'
-        },
-        {
-          label: '身份证号',
-          prop: 'idCardNo',
-          width: '170'
-        }
-      ],
-      extend: [
-        {
-          label: '实名认证情况：',
-          prop: 'realNameAuthStatusName'
-        },
-        {
-          label: '真实姓名：',
-          prop: 'realName'
-        },
-        {
-          label: '总押金：',
-          prop: 'totalDeposit'
-        },
-        {
-          label: '可用押金：',
-          prop: 'usableDeposit'
-        },
-        {
-          label: '冻结押金：',
-          prop: 'freezedDeposit'
-        },
-        {
-          label: '总额度：',
-          prop: 'totalQuota'
-        },
-        {
-          label: '可用额度：',
-          prop: 'usableQuota'
-        },
-        {
-          label: '冻结额度：',
-          prop: 'freezedQuota'
-        },
-        {
-          label: '被此用户邀请且注册的',
-          prop: 'invitedUserRegisterNumber'
-        }
-      ]
+    dataMap: {
+      tableColumn: {
+        show: [
+          // 所有的可显示列，服务端渲染进来
+          {
+            label: '用户ID',
+            prop: 'id',
+            fixed: true,
+            width: '70'
+          },
+          {
+            label: '手机号',
+            prop: 'mobile',
+            width: '150'
+          },
+          {
+            label: '昵称',
+            prop: 'nickName',
+            width: '150'
+          },
+          {
+            label: '用户类型',
+            prop: 'typeName'
+          },
+          {
+            label: '性别',
+            prop: 'sexName'
+          },
+          {
+            label: '所属渠道',
+            prop: 'shareOriginChannel'
+          },
+          {
+            label: 'be shared by',
+            prop: 'shareOriginUserId',
+            width: '150'
+          },
+          {
+            label: '注册时间',
+            prop: 'createDatetimeStr',
+            width: '160'
+          },
+          {
+            label: 'isHave包期卡',
+            prop: 'periodCardHoldFlag',
+            width: '140'
+          },
+          {
+            label: '身份证号',
+            prop: 'idCardNo',
+            width: '170'
+          }
+        ],
+        extend: [
+          {
+            label: '实名认证情况：',
+            prop: 'realNameAuthStatusName'
+          },
+          {
+            label: '真实姓名：',
+            prop: 'realName'
+          },
+          {
+            label: '总押金：',
+            prop: 'totalDeposit'
+          },
+          {
+            label: '可用押金：',
+            prop: 'usableDeposit'
+          },
+          {
+            label: '冻结押金：',
+            prop: 'freezedDeposit'
+          },
+          {
+            label: '总额度：',
+            prop: 'totalQuota'
+          },
+          {
+            label: '可用额度：',
+            prop: 'usableQuota'
+          },
+          {
+            label: '冻结额度：',
+            prop: 'freezedQuota'
+          },
+          {
+            label: '被此用户邀请且注册的',
+            prop: 'invitedUserRegisterNumber'
+          }
+        ]
+      },
+      detail: {}
     }
   }
 });

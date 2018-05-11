@@ -22,10 +22,19 @@
             </template>
           </el-table-column>
           <el-table-column v-for="column in tableColumn.show" :key="column.prop"
-            :fixed="column.prop === 'id'"
+            :fixed="column.fixed"
             :prop="column.prop"
             :label="column.label"
             :min-width="column.width ? column.width : cloumnDefaultStyle.width">
+            <el-table-column v-if="column.sub"
+              v-for="sub in column.sub"
+              :key="sub.prop"
+              :prop="sub.prop"
+              :label="sub.label"
+              :fixed="sub.fixed"
+              :min-width="sub.width ? sub.width: cloumnDefaultStyle.width"
+            >
+            </el-table-column>
           </el-table-column>
         </el-table>
       </div>
@@ -89,14 +98,21 @@
       }
     },
     mounted() {
-      
+      if (!this.isLoading) {
+        this.tableMaxHeight = this.$refs.content.clientHeight
+      }
     },
     updated(){
       // console.log(this.content.list[this.content.page]);
       if (!this.isLoading) {
-        console.log(this.$refs)
         this.tableMaxHeight = this.$refs.content.clientHeight
       }
+      if (this.page !== this.currentPage) {
+        this.currentPage = this.page;
+      }
+      window.addEventListener('resize', (e) => {
+        this.tableMaxHeight = this.$refs.content.clientHeight
+      })
     },
     methods: {
       handleCurrentChange(page) {

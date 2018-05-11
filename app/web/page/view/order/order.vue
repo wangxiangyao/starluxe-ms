@@ -1,7 +1,7 @@
 <template>
-  <div id="memberList">
+  <div id="orderList">
     <listPreview 
-      title="Member Management"
+      title="Order Management"
       :page="page"
       :pageSum="pageSum"
       :isLoading="isLoading"
@@ -23,14 +23,14 @@
   import listMixin from 'web/mixins/list.js';
 
   export default {
-    mixins: [listMixin('member')],
+    mixins: [listMixin('order')],
     components: {
       listPreview
     }
   }
 </script>
 <style>
-  #memberList {
+  #orderList {
     display: flex;
     flex-direction: column;
     height: 100%;

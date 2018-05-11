@@ -61,6 +61,7 @@
         <el-button type="text" @click="handleInit">重置</el-button>
         <el-button size="mini" icon="el-icon-arrow-up" @click="handleToggleUnfold">收起</el-button>
         <el-button icon="el-icon-close" @click="handleCancel">取消</el-button>
+        <el-button icon="el-icon-close" @click="handleEmpty">清空</el-button>
         <el-button type="primary" icon="el-icon-check" @click="handleEnter">确定</el-button>
       </div>
     </div>
@@ -159,6 +160,19 @@
         this.filterItems = this.__getFilterItems()
         this.handleToggleUnfold()
       },
+      handleEmpty() {
+        for (let value of Object.values(this.filterItems)) {
+          switch (value.type) {
+            case 'String':
+              value.value = '';
+              break;
+            case 'Array':
+              value.value = []
+              break;
+            default:
+          }
+        }
+      },
       handleEnter() {
         console.log('确定');
         this.$emit('filter', this.filterItems);
@@ -169,6 +183,11 @@
       },
       __getFilterItems() {
         return deepCopy(this.filterProps)
+      }
+    },
+    watch: {
+      filterProps: function() {
+        this.handleInit()
       }
     }
   }

@@ -573,3 +573,31 @@
 2018-05-10 17:43:27,257 INFO 11312 [egg-security] use dta middleware
 2018-05-10 17:43:27,257 INFO 11312 [egg-security] compose 7 middlewares into one security middleware
 2018-05-10 17:43:27,317 INFO 11312 [egg-watcher:app] watcher start success
+2018-05-11 10:00:25,120 INFO 11956 [egg:logger] init all loggers with options: {"dir":"E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-vue-webpack-spa-boilerplate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-11 10:00:25,242 INFO 11956 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\clean_log.js
+2018-05-11 10:00:25,242 INFO 11956 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2018-05-11 10:00:25,795 INFO 11956 [egg-static] starting static serve /public/ -> E:\develop\xingxiang\Starluxe-ms-interlayer\public
+2018-05-11 10:00:25,800 INFO 11956 [egg-security] use csrf middleware
+2018-05-11 10:00:25,802 INFO 11956 [egg-security] use methodnoallow middleware
+2018-05-11 10:00:25,802 INFO 11956 [egg-security] use noopen middleware
+2018-05-11 10:00:25,803 INFO 11956 [egg-security] use nosniff middleware
+2018-05-11 10:00:25,804 INFO 11956 [egg-security] use xssProtection middleware
+2018-05-11 10:00:25,804 INFO 11956 [egg-security] use xframe middleware
+2018-05-11 10:00:25,805 INFO 11956 [egg-security] use dta middleware
+2018-05-11 10:00:25,805 INFO 11956 [egg-security] compose 7 middlewares into one security middleware
+2018-05-11 10:00:25,877 INFO 11956 [egg-watcher:app] watcher start success
+2018-05-11 13:18:04,720 WARN 11956 [TCPBase] socket is closed by other side while there were still unhandled data in the socket buffer
+2018-05-11 13:18:04,721 WARN 11956 [ClusterClient:Watcher] follower closed, and try to init it again
+2018-05-11 17:51:40,059 INFO 5072 [egg:logger] init all loggers with options: {"dir":"E:\\develop\\xingxiang\\Starluxe-ms-interlayer\\logs","encoding":"utf8","env":"local","level":"INFO","consoleLevel":"DEBUG","disableConsoleAfterReady":false,"outputJSON":false,"buffer":true,"appLogName":"egg-vue-webpack-spa-boilerplate-web.log","coreLogName":"egg-web.log","agentLogName":"egg-agent.log","errorLogName":"common-error.log","coreLogger":{"consoleLevel":"WARN"},"allowDebugAtProd":true,"type":"application"}
+2018-05-11 17:51:40,134 INFO 5072 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\clean_log.js
+2018-05-11 17:51:40,134 INFO 5072 [egg-schedule]: register schedule E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\egg-logrotator\app\schedule\rotate_by_file.js
+2018-05-11 17:51:40,687 INFO 5072 [egg-static] starting static serve /public/ -> E:\develop\xingxiang\Starluxe-ms-interlayer\public
+2018-05-11 17:51:40,690 INFO 5072 [egg-security] use csrf middleware
+2018-05-11 17:51:40,692 INFO 5072 [egg-security] use methodnoallow middleware
+2018-05-11 17:51:40,692 INFO 5072 [egg-security] use noopen middleware
+2018-05-11 17:51:40,693 INFO 5072 [egg-security] use nosniff middleware
+2018-05-11 17:51:40,693 INFO 5072 [egg-security] use xssProtection middleware
+2018-05-11 17:51:40,694 INFO 5072 [egg-security] use xframe middleware
+2018-05-11 17:51:40,695 INFO 5072 [egg-security] use dta middleware
+2018-05-11 17:51:40,695 INFO 5072 [egg-security] compose 7 middlewares into one security middleware
+2018-05-11 17:51:40,749 INFO 5072 [egg-watcher:app] watcher start success

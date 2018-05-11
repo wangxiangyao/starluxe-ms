@@ -5,7 +5,8 @@ axios.defaults.baseURL = '/api/v1';
 axios.defaults.headers.common.Authorization = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIxIiwiY3JlYXRlZF9kYXRlIjoxNTI1MzQzMjU3OTgxLCJleHAiOjE1Mjc5MzUyNTcsImp0aSI6MX0.b2ByF97pxczqei3VDILNzcDvwTWzYWLTX7NuvKV1HYsjsPJ8aMfj5rdal3RllPjPKhQT5oEa8FcpypYpJJwyTw';
 
 const listRouter = {
-  member: '/user'
+  member: '/user',
+  order: '/purchase'
 };
 
 export default {
