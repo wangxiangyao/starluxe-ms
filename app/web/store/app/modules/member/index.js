@@ -1,4 +1,5 @@
 import init from '../../common/list';
+import enumber from '../../enum.js';
 
 const memberModule = init({
   name: 'member',
@@ -13,6 +14,7 @@ const memberModule = init({
        * - value 是过滤项的值
        * - isEnum 表示是否为枚举值，如果是枚举值
        *  - enum，是枚举值的各个值：val表示值，text表示中文描述
+       *  - key 表示再枚举store中的字段名
        */
       userId: {
         type: 'String',
@@ -33,15 +35,8 @@ const memberModule = init({
         value: '',
         text: '性别',
         isEnum: true,
-        enum: [
-          {
-            val: 'MALE',
-            text: '男'
-          }, {
-            val: 'FEMALE',
-            text: '女'
-          }
-        ],
+        enum: [],
+        key: 'sex',
         kind: 'radio'
       },
       mobile: {
@@ -70,21 +65,8 @@ const memberModule = init({
         value: '',
         text: '实名认证情况',
         isEnum: true,
-        enum: [
-          {
-            val: 'NO_AUTH',
-            text: '未认证'
-          }, {
-            val: 'IN_AUTH',
-            text: '认证中'
-          }, {
-            val: 'AUTH_SUCCESS',
-            text: '认证成功'
-          }, {
-            val: 'AUTH_FAIL',
-            text: '认证失败'
-          }
-        ],
+        enum: [],
+        key: 'realNameAuthStatus',
         kind: 'select'
       },
       type: {
@@ -92,24 +74,8 @@ const memberModule = init({
         value: '',
         text: '会员类型',
         isEnum: true,
-        enum: [
-          {
-            val: 'COMMON',
-            text: '普通会员'
-          }, {
-            val: 'EXPERIENCE',
-            text: '体验卡会员'
-          }, {
-            val: 'TWO_STAR',
-            text: '双星卡会员'
-          }, {
-            val: 'FOUR_STAR',
-            text: '四星卡会员'
-          }, {
-            val: 'SIX_STAR',
-            text: '六星卡会员'
-          }
-        ],
+        enum: [],
+        key: 'memberType',
         kind: 'select'
       },
       periodCardHoldFlag: {
@@ -117,16 +83,8 @@ const memberModule = init({
         value: '',
         text: '是否持有抱起卡',
         isEnum: true,
-        enum: [
-          {
-            val: 'YES',
-            text: '持有'
-          },
-          {
-            val: 'NO',
-            text: '未持有'
-          }
-        ],
+        enum: [],
+        key: 'periodCardHoldFlag',
         kind: 'radio'
       },
       registerTime: {

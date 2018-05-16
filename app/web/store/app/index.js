@@ -7,6 +7,8 @@ import getters from './getters';
 import mutations from './mutations';
 import member from './modules/member/';
 import order from './modules/order/order.js';
+import commodity from './modules/commodity/commodity.js';
+import enumber from './enum';
 
 Vue.use(Vuex);
 
@@ -29,6 +31,8 @@ const state = {
   token: '',
   host,
   env,
+  brands: [],
+  enumber,
   style: {
     mainColor: '#FF7F00'
   },
@@ -73,8 +77,9 @@ const state = {
             }]
           },
           {
-            to: '',
-            title: ''
+            to: '/commodity',
+            title: '商品',
+            icon: 'el-icon-goods'
           },
           {
             to: '',
@@ -100,6 +105,7 @@ export default new Vuex.Store({
   mutations,
   modules: {
     member,
-    order
+    order,
+    commodity
   }
 });

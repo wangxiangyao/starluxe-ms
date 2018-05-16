@@ -449,3 +449,80 @@ hostname: wxy
     at Store.dispatch (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:428:15)
     at Store.boundDispatch [as dispatch] (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:334:21)
     at Store.local.dispatch (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:636:20)
+2018-05-16 11:33:51,502 ERROR 6852 [app.js] server render bundle error, try client render, the server render error TypeError: Cannot read property 'undefined' of undefined
+    at VueComponent.currentList (webpack:///./app/web/component/list/list.vue?./node_modules/babel-loader/lib!./node_modules/vue-loader/lib/selector.js?type=script&index=0:41:55)
+    at Object.get (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:1918:20)
+    at Proxy.render (webpack:///./app/web/component/list/list.vue?./node_modules/vue-loader/lib/template-compiler?%7B%22id%22:%22data-v-976422c8%22,%22hasScoped%22:true,%22optionsId%22:%220%22,%22buble%22:%7B%22transforms%22:%7B%7D%7D%7D!./node_modules/vue-loader/lib/selector.js?type=template&index=0:30:33)
+    at VueComponent.Vue._render (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue\dist\vue.runtime.common.js:4542:22)
+    at renderComponentInner (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7521:25)
+    at renderComponent (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7491:5)
+    at RenderContext.renderNode (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7407:5)
+    at RenderContext.next (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2428:14)
+    at cachedWrite (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:2287:9)
+    at renderStringNode$1 (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vue-server-renderer\build.js:7612:5)
+2018-05-16 11:35:51,929 ERROR 6852 [-/127.0.0.1/-/23ms GET /api/v1?page=1&limit=12] nodejs.SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at proxy (E:\develop\xingxiang\Starluxe-ms-interlayer\app\middleware\proxy.js:20:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6852
+hostname: wxy
+
+2018-05-16 11:36:12,039 ERROR 6852 [-/127.0.0.1/-/9ms GET /api/v1?page=1&limit=12] nodejs.SyntaxError: Unexpected end of JSON input
+    at JSON.parse (<anonymous>)
+    at proxy (E:\develop\xingxiang\Starluxe-ms-interlayer\app\middleware\proxy.js:20:30)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+
+pid: 6852
+hostname: wxy
+
+2018-05-16 14:53:41,551 ERROR 220 [app.js] server render bundle error, try client render, the server render error ReferenceError: regeneratorRuntime is not defined
+    at eval (webpack:///./app/web/store/app/actions.js?:18:34)
+    at eval (webpack:///./app/web/store/app/actions.js?:45:4)
+    at Object../app/web/store/app/actions.js (__vue_ssr_bundle__:372:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/store/app/index.js?:6:66)
+    at Object../app/web/store/app/index.js (__vue_ssr_bundle__:432:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/page/app.js?:82:68)
+    at Object../app/web/page/app.js (__vue_ssr_bundle__:300:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+2018-05-16 14:54:36,731 ERROR 220 [app.js] server render bundle error, try client render, the server render error ReferenceError: regeneratorRuntime is not defined
+    at eval (webpack:///./app/web/store/app/actions.js?:18:34)
+    at eval (webpack:///./app/web/store/app/actions.js?:46:4)
+    at Object../app/web/store/app/actions.js (__vue_ssr_bundle__:372:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/store/app/index.js?:6:66)
+    at Object../app/web/store/app/index.js (__vue_ssr_bundle__:432:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+    at eval (webpack:///./app/web/page/app.js?:82:68)
+    at Object../app/web/page/app.js (__vue_ssr_bundle__:300:1)
+    at __webpack_require__ (__vue_ssr_bundle__:29:30)
+2018-05-16 16:13:31,974 ERROR 796 [app.js] server render bundle error, try client render, the server render error Error: [vuex] mutations should be function but "mutations.STORE_ENUM_BRANDS" in module "commodity" is {"root":true}.
+    at assert (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:99:27)
+    at E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:273:7
+    at E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:87:52
+    at Array.forEach (<anonymous>)
+    at forEachValue (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:87:20)
+    at E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:272:5
+    at Array.forEach (<anonymous>)
+    at assertRawModule (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:267:28)
+    at ModuleCollection.register (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:193:5)
+    at E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\vuex\dist\vuex.common.js:207:14
+2018-05-16 18:14:27,083 ERROR 796 [-/127.0.0.1/-/47ms GET /api/v1/commodity?rentPriceRange=[123,123]&page=1&limit=12] nodejs.AssertionError [ERR_ASSERTION]: invalid status code: 1002
+    at Object.set status [as status] (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\koa\lib\response.js:86:5)
+    at Object.status (E:\develop\xingxiang\Starluxe-ms-interlayer\node_modules\delegates\index.js:92:31)
+    at proxy (E:\develop\xingxiang\Starluxe-ms-interlayer\app\middleware\proxy.js:21:18)
+    at <anonymous>
+    at process._tickCallback (internal/process/next_tick.js:118:7)
+generatedMessage: false
+name: 'AssertionError [ERR_ASSERTION]'
+code: 'ERR_ASSERTION'
+actual: undefined
+expected: true
+operator: '=='
+pid: 796
+hostname: wxy
+

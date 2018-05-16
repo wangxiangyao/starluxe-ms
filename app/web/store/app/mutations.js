@@ -1,6 +1,7 @@
 'use strict';
 
 import * as TYPE from './mutation-type';
+import enumberStore from './enum.js';
 
 const mutations = {
   [TYPE.STORE_TOKEN](state, token) {
@@ -27,6 +28,15 @@ const mutations = {
       mask.type = 'error';
       mask.message = '不存在的mask类型';
     }
+  },
+  [TYPE.STORE_BRANDS](state, brands) {
+    state.brands = brands;
+  },
+  [TYPE.STORE_ENUM](state, {
+    enumber,
+    key
+  }) {
+    enumberStore[key] = enumber;
   }
 };
 export default mutations;

@@ -6,7 +6,10 @@ axios.defaults.headers.common.Authorization = 'eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiIx
 
 const listRouter = {
   member: '/user',
-  order: '/purchase'
+  order: '/purchase',
+  commodity: '/commodity',
+  brands: '/commodityBrand',
+  commodityCategory: '/commodityCategory'
 };
 
 export default {
@@ -24,5 +27,5 @@ export default {
         ...config
       }
     });
-  }
+  },
 };

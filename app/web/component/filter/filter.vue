@@ -32,7 +32,7 @@
           </template>
           <template v-else-if="filterItem.kind === 'select'">
             <div class="label">{{filterItem.text}}：</div>
-            <el-select v-model="filterItem.value" size="mini" clearable placeholder="请选择">
+            <el-select v-model="filterItem.value" size="mini" clearable :filterable="filterItem.filterable" placeholder="请选择">
               <el-option
                 v-for="item in filterItem.enum"
                 :key="item.val"
@@ -54,6 +54,11 @@
               :picker-options="pickerOptions"
               value-format="timestamp">
             </el-date-picker>
+          </template>
+          <template v-else-if="filterItem.kind === 'numberRange'">
+            <span class="label">{{filterItem.text}}：</span>
+            <el-input size="mini" v-model="filterItem.value[0]" clearable placeholder="请输入内容"></el-input>
+            <el-input size="mini" v-model="filterItem.value[1]" clearable placeholder="请输入内容"></el-input>
           </template>
         </div>
       </div>
@@ -220,6 +225,7 @@
     padding: 10px;
   }
   .unfold .filter-items .item .label {
+    flex: none;
     font-size: 12px;
   }
   .unfold .filter-actions {

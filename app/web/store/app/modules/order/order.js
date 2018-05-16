@@ -1,5 +1,6 @@
 import init from '../../common/list';
 import moment from 'moment';
+import enumber from '../../enum.js';
 
 const orderModule = init({
   name: 'order',
@@ -15,6 +16,13 @@ const orderModule = init({
        * - isEnum 表示是否为枚举值，如果是枚举值
        *  - enum，是枚举值的各个值：val表示值，text表示中文描述
        */
+      id: {
+        type: 'String',
+        value: '',
+        text: '订单ID',
+        isEnum: false,
+        kind: 'input'
+      },
       purchaseNo: {
         type: 'String',
         value: '',
@@ -62,15 +70,8 @@ const orderModule = init({
         value: '',
         text: '租赁方式',
         isEnum: true,
-        enum: [
-          {
-            val: 'RENT_BY_PERIOD_CARD',
-            text: '包期卡租赁'
-          }, {
-            val: 'RENT_BY_DEPOSIT',
-            text: '押金租赁'
-          }
-        ],
+        enum: [],
+        key: 'rentMethod',
         kind: 'radio'
       },
       status: {
@@ -78,42 +79,8 @@ const orderModule = init({
         value: '',
         text: '订单状态',
         isEnum: true,
-        enum: [
-          {
-            val: 'NEW_PURCHASE_WAIT_PAY',
-            text: '新订单待付款'
-          }, {
-            val: 'PAYED_AND_PREPARING',
-            text: '准备中'
-          }, {
-            val: 'PREPARED_AND_DISPATCHING',
-            text: '派送中'
-          }, {
-            val: 'RECEIVED_AND_SIGNED',
-            text: '已签收'
-          }, {
-            val: 'LEASE_TIMEOUT',
-            text: '租期超时'
-          }, {
-            val: 'RESERVED_FOR_RETURN',
-            text: '已预约还货'
-          }, {
-            val: 'RETURN_ON_THE_WAY',
-            text: '返仓中'
-          }, {
-            val: 'WAIT_COMPENSATE',
-            text: '待赔付'
-          }, {
-            val: 'RETURNED_AND_SUCCESS',
-            text: '交易成功'
-          }, {
-            val: 'CANCELED',
-            text: '已取消'
-          }, {
-            val: 'PAY_TIMEOUT',
-            text: '超时未支付'
-          }
-        ],
+        enum: [],
+        key: 'orderStatus',
         kind: 'select'
       },
       createTime: {

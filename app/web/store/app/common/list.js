@@ -85,7 +85,7 @@ export default function initListModule(config = {}) {
       };
     },
     getters: {
-      filterConfig: state => {
+      filterConfig: (state, getters, rootState) => {
         // 同样，需要根据权限地图，获得当卡用户可用的过滤项
         /**
          * 关于过滤项策略：
@@ -96,7 +96,14 @@ export default function initListModule(config = {}) {
          *      - String：空字符串
          *      - Array：空数组
          */
-        return JSON.parse(JSON.stringify(state.filterMap));
+        const obj = JSON.parse(JSON.stringify(state.filterMap));
+        for (const [key, value] of Object.entries(obj)) {
+          if (value.isEnum) {
+            console.log(`在module：${name}检测到枚举值`);
+            value.enum = rootState.enumber[value.key];
+          }
+        }
+        return obj;
       },
       pureFilterConfig: (state, getters) => {
         const c = {};
@@ -108,7 +115,7 @@ export default function initListModule(config = {}) {
                 return item !== '';
               });
               if (arr.length !== 0) {
-                c[key] = `[${value.value.join(',')}]`;
+                c[key] = `${value.value.join(',')}`;
               }
             } else {
               c[key] = value.value;

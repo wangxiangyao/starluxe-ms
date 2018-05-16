@@ -20,7 +20,7 @@
   </app-layout>
 </template>
 <script type="text/babel">
-  import { mapState, mapMutations } from 'vuex'
+  import { mapState, mapMutations, mapActions } from 'vuex'
   import * as type from '../store/app/mutation-type'
 
   export default {
@@ -31,11 +31,14 @@
       // this.showMask({
       //   type: 'login'
       // })
+      this.getBrands()
+      this.getCommodityCategory()
     },
     methods: {
       ...mapMutations({
         showMask: type.SHOW_MASK
       }),
+      ...mapActions(['getBrands', 'getCommodityCategory'])
     }
   }
 </script>

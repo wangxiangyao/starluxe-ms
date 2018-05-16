@@ -11,8 +11,10 @@ App.data = () => {
 
 App.init = options => {
   if (EASY_ENV_IS_NODE) {
+    console.log('server render /n');
     return App.server(options);
   }
+  console.log('client render /n');
   return App.client(options);
 };
 
@@ -30,15 +32,19 @@ App.client = options => {
 
 App.server = options => {
   if (options.store && options.router) {
+    console.log('处理预取');
     return context => {
       options.router.push(context.state.url);
       const matchedComponents = options.router.getMatchedComponents();
+      console.log(matchedComponents, options.router);
       if (!matchedComponents) {
         return Promise.reject({ code: '404' });
       }
       return Promise.all(
         matchedComponents.map(component => {
+          console.log('遍历组件,当前：', component.name);
           if (component.preFetch) {
+            console.log('存在服务端预取');
             return component.preFetch(options.store);
           }
           return null;
@@ -46,9 +52,12 @@ App.server = options => {
       ).then(() => {
         context.state = Object.assign(options.store.state, context.state);
         return new Vue(options);
+      }).catch((err) => {
+        console.log(err);
       });
     };
   }
+  console.log('没有预取');
   return context => {
     const VueApp = Vue.extend(options);
     const app = new VueApp({ data: context.state });
