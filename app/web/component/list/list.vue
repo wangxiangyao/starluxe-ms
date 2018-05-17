@@ -16,7 +16,19 @@
             <template slot-scope="props">
               <el-form label-position="left" inline class="table-expand">
                 <el-form-item v-for="extend in tableColumn.extend" :key="extend.prop" :label="extend.label">
-                  <span>{{props.row[extend.prop]}}</span>
+                  <el-table
+                    v-if="extend.sub"
+                    :data="props.row[extend.prop]"
+                    style="width: 100%">
+                    <el-table-column
+                      v-for="sub in extend.sub"
+                      :key="sub.prop"
+                      :prop="sub.prop"
+                      :label="sub.label"
+                      :width="sub.width ? sub.width: cloumnDefaultStyle.width">
+                    </el-table-column>
+                  </el-table>
+                  <span v-else>{{props.row[extend.prop]}}</span>
                 </el-form-item>
               </el-form>
             </template>
@@ -164,15 +176,18 @@
   .table-expand {
     display: flex;
     flex-wrap: wrap;
+    justify-content: flex-start;
   }
   .table-expand label {
     color: var(--主题色);
   }
   .table-expand .el-form-item {
-    margin-right: 0;
-    margin-bottom: 0;
-    flex: 0 0 25%;
+    margin-right: 40px;
+    margin-bottom: 20px;
+    padding-right: 40px;
+    flex: 0 0 100%;
     min-width: 120px;
+    border-right: 1px solid #000;
   }
   .pagination-wrapper .number.active {
     color: var(--主题色);

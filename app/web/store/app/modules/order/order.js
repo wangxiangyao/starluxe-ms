@@ -135,6 +135,11 @@ const orderModule = init({
             width: '70'
           },
           {
+            label: '用户昵称',
+            prop: 'userNickName',
+            width: '120'
+          },
+          {
             label: '订单状态',
             prop: 'statusName'
           },
@@ -233,28 +238,27 @@ const orderModule = init({
             prop: 'purchaseNo'
           },
           {
-            label: '租赁周期',
-            prop: 'rentCycleNumber'
-          },
-          {
             label: '商品货号',
             prop: 'commodityNo'
-          },
-          {
-            label: '商品品牌',
-            prop: 'totalDeposit'
           },
           {
             label: '商品名称',
             prop: 'commodityName'
           },
           {
-            label: '收货人街道地址',
-            prop: 'receiveAddress'
-          },
-          {
-            label: '还货人街道地址',
-            prop: 'returnAddress'
+            label: '订单支付详情',
+            prop: 'purchaseList',
+            sub: [
+              {
+                label: '支付流水号',
+                prop: 'payTradeNo',
+                width: '270'
+              },
+              {
+                label: '支付渠道',
+                prop: 'payChannelName'
+              }
+            ]
           }
         ]
       },
@@ -278,15 +282,27 @@ const orderModule = init({
          */
         const list = res.data.list.map((item) => {
           const {
-            rentCycleNumber,
+            purchaseDetailList,
             rentCycleName,
             appointmentReceiveStartDatetime,
             appointmentReceiveEndDatetime,
             appointmentReturnStartDatetime,
             appointmentReturnEndDatetime
           } = item;
+
+          // 对purchaseDetailList进行处理，得到租赁总周期，每次租赁的流水号，支付渠道
+          let number = 0;
+          item.purchaseList = purchaseDetailList.map((item) => {
+            const { rentCycleNumber, payTradeNo, payChannelName } = item;
+            number += rentCycleNumber;
+            return {
+              payTradeNo,
+              payChannelName
+            };
+          });
+
           // 合并rent
-          item.rent = rentCycleNumber ? `${rentCycleNumber} ${rentCycleName}` : '';
+          item.rent = number ? `${number} ${rentCycleName}` : '';
 
           // 计算收货/还货日期 和 时间
           const receiveStart = moment(appointmentReceiveStartDatetime);

@@ -53,7 +53,7 @@ const state = {
       {
         title: '首页',
         to: '/home',
-        icon: 'el-icon-tickets'
+        icon: 'el-icon-w-home'
       },
       {
         title: '数据管理',

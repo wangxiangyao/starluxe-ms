@@ -14,5 +14,5 @@
   @import "../../../asset/css/global.css";
 </style>
 <script type="text/babel">
-
+  
 </script>
