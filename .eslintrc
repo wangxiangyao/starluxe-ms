@@ -5,6 +5,7 @@
     "sourceType": "module"
   },
   "rules": {
+    "generator-star-spacing": "off",
     "arrow-parens": "off",
     "valid-jsdoc": "off",
     "eol-last": "off",
