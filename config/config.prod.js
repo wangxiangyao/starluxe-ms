@@ -6,7 +6,12 @@
 
 
 module.exports = app => {
-  const exports = {};
+  const exports = {
+    proxy: {
+      baseURL: 'http://106.15.230.173:8081', // 要代理到的后端的url
+      proxyPath: '/api/v1' // 要代理的路径
+    }
+  };
 
   return exports;
 };
