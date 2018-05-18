@@ -15,11 +15,7 @@ module.exports = {
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
   loaders: {
-    eslint: {
-      options: {
-        fix: true
-      }
-    }
+    eslint: false
   },
   plugins: {},
   done() {
