@@ -14,9 +14,7 @@ module.exports = {
     vue: 'vue/dist/vue.esm.js',
   },
   dll: ['vue', 'axios', 'vue-router', 'vuex', 'vuex-router-sync'],
-  loaders: {
-    eslint: false
-  },
+  loaders: {},
   plugins: {},
   done() {
 
